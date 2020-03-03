@@ -1,0 +1,171 @@
+ /* page  master*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/images/tile.jpg);
+}
+
+/*main div design*/
+#page {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 15% 30% 55%;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+  /* header section divisions*/
+header {
+    grid-column: span 12;
+}
+
+/* website headline*/
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: "myTaskBoradFont";
+    color: black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+/* website headline font*/
+@font-face {
+    src: url(/assets/fonts/Painting_With_Chocolate.ttf);
+    font-family: "myTaskBoradFont";
+}
+
+/* form section design*/
+main {
+    grid-column: span 12;
+    background-image: url(/assets/images/formbg.jpg);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 600px;
+    height: 170px;
+    background-repeat: repeat-y;
+}
+
+/* task-lable and date-lable class design */
+.taskDateLableClass{
+    padding-left: 80px;
+    padding-right: 0;
+    display: inline-block;
+}
+
+ /* tasks input box - userTasksBox*/
+#userTasksBox {
+    width: 50%;
+    height: 19%;
+    margin-top: 15px;
+    margin-left: 4px;
+}
+
+  /* Date input boxe design- deadlineDateBox*/
+#deadlineDateBox {
+    margin-top: 16px;
+    margin-left: 4px;
+}
+
+/* Time input boxe design -deadlineTimeBox*/
+#deadlineTimeBox {
+    margin-left: 5px;
+}
+
+ /*Add button design*/
+#addButton {
+    margin-top: 7px;
+    margin-left:40%;
+    font-size: 15px;
+    height: 30px;
+}
+
+ /*Clear button design*/
+#clearButton {
+    margin-top: 7px;
+    font-size: 15px;
+    height: 30px;
+}
+
+/* Section design */
+section {
+    grid-column: span 12;
+    margin: 10px;
+}
+
+/* note desgin*/
+.noteMasterClass {
+    background-image: url(/assets/images/notebg.png);
+    background-size: cover;
+    width: 250px;
+    height: 300px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    animation: fadeIn 1s;
+}
+
+/* animation for the fade In effect */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* note text design */
+.notePrintAreaClass{
+    width: 210px;
+    height: 280px;
+    padding: 10px;
+    margin-top:20px;
+    display: inline-block;
+    position: absolute;
+}
+
+/* task paragraph designed with div */
+.printedTaskDivClass {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow-y: auto;
+}
+
+/* task on note */
+.printedTaskClass {
+    margin: 5px;
+}
+
+/* time on note */
+.printedTimeClass {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    font-weight: bold;
+}
+
+/* Date on note */
+.printedDateClass{
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    font-weight: bold;
+}
+
+/* close/delete note button design */
+.glyphicon{
+    top: 5px;
+    left: 185px;
+    font-size: large;
+    color: black;
+    visibility: hidden;
+}
+
